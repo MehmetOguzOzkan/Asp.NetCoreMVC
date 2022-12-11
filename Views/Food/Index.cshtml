@@ -1,0 +1,35 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model IPagedList<ProjeDenemesi1.Models.Food>
+
+<h2>Yiyecek Listesi</h2>
+<br />
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Yiyecek</th>
+            <th>Fiyat</th>
+            <th>Stok Miktarı</th>
+            <th>Yiyeceğin Türü</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="table-dark">
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.Name</td>
+                <td>@x.Price</td>
+                <td>@x.Stock</td>
+                <td>@x.Category.CategoryName</td>
+                <td><a asp-action="FoodDelete" asp-route-id="@x.FoodID" class="btn btn-danger">Sil</a></td>
+                <td><a asp-action="FoodGet" asp-route-id="@x.FoodID" class="btn btn-success">Güncelle</a></td>
+            </tr>       
+        }
+    </tbody>
+
+</table>
+@Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index",new {page}))
+<br />
+<a asp-action="FoodAdd" class="btn btn-primary">Yeni Yiyecek</a>
