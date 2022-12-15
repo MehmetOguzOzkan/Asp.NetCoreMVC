@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProjeDenemesi1.Repositories;
-using ProjeDenemesi1.Models;
+using ProjectWEB.Repositories;
+using ProjectWEB.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using X.PagedList;
+using X.PagedList.Mvc.Core;
 
-namespace ProjeDenemesi1.Controllers
+namespace ProjectWEB.Controllers
 {
     public class FoodController : Controller
     {

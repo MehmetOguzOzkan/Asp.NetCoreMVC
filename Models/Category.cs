@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProjeDenemesi1.Models
+namespace ProjectWEB.Models
 {
     public class Category
     {
@@ -14,6 +14,8 @@ namespace ProjeDenemesi1.Models
         public string CategoryDescription { get; set; }
         [Display(Name ="Durum")]
         public bool CategoryState { get; set; }
+        [Display(Name ="Resim Adresi")]
+        public string CategoryImage { get; set; }
         public List<Food> Foods { get; set; }
     }
 }

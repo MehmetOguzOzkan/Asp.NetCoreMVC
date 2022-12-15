@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProjeDenemesi1.Models;
+using ProjectWEB.Models;
 using System.Runtime.CompilerServices;
 
-namespace ProjeDenemesi1.Controllers
+namespace ProjectWEB.Controllers
 {
     public class ChartController : Controller
     {

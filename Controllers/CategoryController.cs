@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProjeDenemesi1.Repositories;
-using ProjeDenemesi1.Models;
+using ProjectWEB.Repositories;
+using ProjectWEB.Models;
+using Microsoft.AspNetCore.Authorization;
 
-namespace ProjeDenemesi1.Controllers
+namespace ProjectWEB.Controllers
 {
     public class CategoryController : Controller
     {
         CategoryRepository categoryRepository = new CategoryRepository();
-
         public IActionResult Index()
         {
             return View(categoryRepository.TList());
@@ -35,6 +35,7 @@ namespace ProjeDenemesi1.Controllers
                 CategoryID = x.CategoryID,
                 CategoryName = x.CategoryName,
                 CategoryDescription = x.CategoryDescription,
+                CategoryImage= x.CategoryImage,
             };
             return View(ct);
         }
@@ -44,6 +45,7 @@ namespace ProjeDenemesi1.Controllers
             var x = categoryRepository.TGet(p.CategoryID);
             x.CategoryName = p.CategoryName;
             x.CategoryDescription = p.CategoryDescription;
+            x.CategoryImage = p.CategoryImage;
             x.CategoryState = true;
             categoryRepository.TUpdate(x);
             return RedirectToAction("Index");

@@ -1,4 +1,4 @@
-namespace ProjeDenemesi1.Models
+namespace ProjectWEB.Models
 {
     public class ErrorViewModel
     {

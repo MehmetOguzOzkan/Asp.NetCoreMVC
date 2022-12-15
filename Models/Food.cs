@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProjeDenemesi1.Models
+namespace ProjectWEB.Models
 {
     public class Food
     {
