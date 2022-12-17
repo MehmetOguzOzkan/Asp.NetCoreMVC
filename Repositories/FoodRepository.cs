@@ -1,6 +1,6 @@
-﻿using ProjeDenemesi1.Models;
+﻿using ProjectWEB.Models;
 
-namespace ProjeDenemesi1.Repositories
+namespace ProjectWEB.Repositories
 {
     public class FoodRepository:GenericRepository<Food>
     {

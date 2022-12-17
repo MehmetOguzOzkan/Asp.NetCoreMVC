@@ -1,0 +1,15 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+@*     <a  class="fa fa-user" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hoşgeldiniz @User.Identity?.Name!</a>
+*@     <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Default", new { area = "" })">
+        <button  type="submit" class="btn"><i class="fa fa-user"></i> Çıkış</button>
+     </form>
+}
+else
+{
+    <a asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-user"></i>Giriş</a>
+}

@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProjeDenemesi1.Models;
+using ProjectWEB.Models;
+using System.Linq.Expressions;
 
-namespace ProjeDenemesi1.Repositories
+namespace ProjectWEB.Repositories
 {
     public class GenericRepository<T> where T:class,new()
     {
@@ -33,6 +34,10 @@ namespace ProjeDenemesi1.Repositories
         {
             return c.Set<T>().Include(p).ToList();
 
+        }
+        public List<T> List(Expression<Func<T,bool>> filter) 
+        {
+            return c.Set<T>().Where(filter).ToList();
         }
     }
 }
