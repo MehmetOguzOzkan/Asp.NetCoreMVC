@@ -1,0 +1,119 @@
+﻿@inject LanguageService language
+
+
+<body>
+    <br />
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-danger text-center">
+                        <h1 class="font-light text-white">@ViewBag.et</h1>
+                        <h6 class="text-white">@language.Getkey("Et Ürünü Çeşidi")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-success text-center">
+                        <h1 class="font-light text-white">@ViewBag.tavuk</h1>
+                        <h6 class="text-white">@language.Getkey("Tavuk Ürünü Çeşidi")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-cyan text-center">
+                        <h1 class="font-light text-white">@ViewBag.deniz</h1>
+                        <h6 class="text-white">@language.Getkey("Deniz Ürünü Çeşidi")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-warning text-center">
+                        <h1 class="font-light text-white">@ViewBag.sut</h1>
+                        <h6 class="text-white">@language.Getkey("Süt Ürünü Çeşidi")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-danger text-center">
+                        <h1 class="font-light text-white">@ViewBag.etStock</h1>
+                        <h6 class="text-white">@language.Getkey("Et Ürünü Stoğu")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-success text-center">
+                        <h1 class="font-light text-white">@ViewBag.tavukStock</h1>
+                        <h6 class="text-white">@language.Getkey("Tavuk Ürünü Stoğu")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-cyan text-center">
+                        <h1 class="font-light text-white">@ViewBag.denizStock</h1>
+                        <h6 class="text-white">@language.Getkey("Deniz Ürünü Stoğu")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-warning text-center">
+                        <h1 class="font-light text-white">@ViewBag.sutStock</h1>
+                        <h6 class="text-white">@language.Getkey("Süt Ürünü Stoğu")</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-danger text-center">
+                        <h1 class="font-light text-white">@ViewBag.totalStock</h1>
+                        <h6 class="text-white">@language.Getkey("Toplam Stok")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-9 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-success text-center">
+                        <h1 class="font-light text-white">@ViewBag.maxStockFood</h1>
+                        <h6 class="text-white">@language.Getkey("Stokta En Fazla Bulunan")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-9 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-cyan text-center">
+                        <h1 class="font-light text-white">@ViewBag.minStockFood</h1>
+                        <h6 class="text-white">@language.Getkey("Stokta En Az Bulunan")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3 col-xlg-3">
+                <div class="card card-hover">
+                    <div class="box bg-warning text-center">
+                        <h1 class="font-light text-white">@ViewBag.averagePriceFood</h1>
+                        <h6 class="text-white">@language.Getkey("Ortalama Fiyat")</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+        </div>
+    </div>
+</body>

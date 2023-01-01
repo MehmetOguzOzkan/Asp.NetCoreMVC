@@ -1,0 +1,56 @@
+﻿@{
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+@inject LanguageService language
+
+<section class="hero">
+    <div class="container">
+        <div class="hero__item set-bg" data-setbg="/arkaplan.jpg">
+            <div class="hero__text">
+                <span style="background-color:silver">@language.Getkey("ÜRETİCİDEN EVİNİZE")</span>
+                <h2 style="background-color:silver">@language.Getkey("Taze") <br />@language.Getkey("Kaliteli") <br />@language.Getkey("Doğal")</h2>
+                <p style="background-color:silver">@language.Getkey("Ücretsiz Anında Kapınızda")</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="categories__slider owl-carousel">
+                @await Component.InvokeAsync("CategoryGetListSlider")
+            </div>
+        </div>
+    </div>
+</section>
+<section class="featured spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>@language.Getkey("Çok Satanlar")</h2>
+                </div>
+            </div>
+        </div>
+        @await Component.InvokeAsync("FoodGetList")
+    </div>
+</section>
+
+@*<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="banner__pic">
+                    <img src="~/ogani/img/banner/banner-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="banner__pic">
+                    <img src="~/ogani/img/banner/banner-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@

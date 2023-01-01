@@ -1,0 +1,21 @@
+﻿@model ProjectWEB.Models.Category
+
+@inject LanguageService language
+
+@using (Html.BeginForm("CategoryUpdate", "Category", FormMethod.Post))
+{
+    @Html.HiddenFor(x=>x.CategoryID)
+    @Html.HiddenFor(x=>x.CategoryID,new {@class="form-control"})
+    <br />
+    @Html.LabelFor(x=>x.CategoryName)
+    @Html.TextBoxFor(x=>x.CategoryName,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.CategoryName,"",new {@style="color:red"})
+    <br />
+    @Html.LabelFor(x=>x.CategoryImage)
+    @Html.TextBoxFor(x=>x.CategoryImage,new {@class="form-control"})
+    <br />
+    @Html.LabelFor(x=>x.CategoryDescription)
+    @Html.TextBoxFor(x=>x.CategoryDescription,new {@class="form-control"})
+    <br />
+    <button type="submit" class="btn btn-primary">@language.Getkey("Kaydet")</button>
+}

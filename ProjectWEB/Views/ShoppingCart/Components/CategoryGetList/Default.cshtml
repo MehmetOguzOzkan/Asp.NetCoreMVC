@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ProjectWEB.Models.Category>
+
+@inject LanguageService language
+
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hero__categories">
+                    <div class="hero__categories__all">
+                        <i class="fa fa-bars"></i>
+                        <span>@language.Getkey("Kategoriler")</span>
+                    </div>
+                    <ul>
+                        @foreach(var item in Model)
+                        {
+                            <li><a asp-controller="Default" asp-action="CategoryDetails" asp-route-id="@item.CategoryID">@item.CategoryName</a></li>  
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        <form asp-controller="Default" asp-action="Search" method="post">
+                            <input type="text" name="searchString" placeholder="@language.Getkey("Neye ihtiyacın var?")">
+                            <button type="submit" class="site-btn">@language.Getkey("ARA")</button>
+                        </form>
+                    </div>
+                    <div class="hero__search__phone">
+                        <div class="hero__search__phone__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="hero__search__phone__text">
+                            <h5>+90 322 515 0123</h5>
+                            <span>@language.Getkey("7/24 hizmetinizde")</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

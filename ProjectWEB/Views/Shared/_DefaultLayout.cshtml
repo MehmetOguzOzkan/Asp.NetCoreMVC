@@ -1,0 +1,191 @@
+﻿@{
+    Layout = null;
+}
+
+@inject LanguageService language
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@language.Getkey("Anasayfa")</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="~/ogani/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="~/ogani/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/ogani/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="~/ogani/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="~/ogani/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="~/ogani/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="~/ogani/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="~/ogani/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a asp-controller="Default" asp-action="Index"><img src="~/ogani/img/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a asp-controller="ShoppingCart" asp-action="Index"><i class="fa fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+        <div class="humberger__menu__widget">
+                            <div class="header__top__right__language">
+                                <div>@language.Getkey("Dil")</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a asp-controller="Default" asp-action="ChangeLanguage" asp-route-culture="tr-TR">Türkçe</a></li>
+                                    <li><a asp-controller="Default" asp-action="ChangeLanguage" asp-route-culture="en-US">English</a></li>
+                                </ul>
+                            </div>
+            <div class="header__top__right__auth">
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a asp-controller="Default asp-action="Index">@language.Getkey("Anasayfa")</a></li>
+                <li><a asp-controller="Default" asp-action="AboutUs">Hakkımızda</a></li>
+                <li><a asp-controller="Default" asp-action="Contact">İletişim</a></li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    if (User.IsInRole("Admin"))
+                    {
+                        <li><a asp-controller="Chart" asp-action="Statistics">Yönetici</a></li>
+
+                    }
+
+                }
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i>doy@gmail.com</li>
+                <li>@language.Getkey("100₺ ve üzeri alışverişlerde kargo ücretsiz")</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> doy@gmail.com</li>
+                                <li>@language.Getkey("100₺ ve üzeri alışverişlerde kargo ücretsiz")</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__language">
+                                <div>@language.Getkey("Dil")</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a asp-controller="Default" asp-action="ChangeLanguage" asp-route-culture="tr-TR">Türkçe</a></li>
+                                    <li><a asp-controller="Default" asp-action="ChangeLanguage" asp-route-culture="en-US">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <partial name="_LoginPartial" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a asp-controller="Default" asp-action="Index"><img src="~/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a asp-controller="Default" asp-action="Index">@language.Getkey("Anasayfa")</a></li>
+                            <li><a asp-controller="Default" asp-action="AboutUs">@language.Getkey("Hakkımızda")</a></li>
+                            <li><a asp-controller="Default" asp-action="Contact">@language.Getkey("İletişim")</a></li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                if (User.IsInRole("Admin"))
+                                {
+                                    <li><a asp-controller="Chart" asp-action="Statistics">@language.Getkey("Yönetici")</a></li>
+
+                                }
+                            }
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a asp-controller="ShoppingCart" asp-action="Index"><i class="fa fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    @await Component.InvokeAsync("CategoryGetList")
+    @RenderBody()
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <li>@language.Getkey("Adres") : Kemalpaşa, Esentepe Kampüsü, Üniversite Cd., 54050 Serdivan/Sakarya</li>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__about">
+                        <li>@language.Getkey("Telefon") : +90 322 515 0123</li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <li>Email : doy@gmail.com</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="~/ogani/js/jquery-3.3.1.min.js"></script>
+    <script src="~/ogani/js/bootstrap.min.js"></script>
+    <script src="~/ogani/js/jquery.nice-select.min.js"></script>
+    <script src="~/ogani/js/jquery-ui.min.js"></script>
+    <script src="~/ogani/js/jquery.slicknav.js"></script>
+    <script src="~/ogani/js/mixitup.min.js"></script>
+    <script src="~/ogani/js/owl.carousel.min.js"></script>
+    <script src="~/ogani/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+@inject LanguageService language
+
+    <section class="breadcrumb-section set-bg" data-setbg="/ogani/img/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>@language.Getkey("Hakkımızda")</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-7">
+                @language.Getkey("String1")
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12 col-md-7">
+                @language.Getkey("String2")
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12 col-md-7">
+                @language.Getkey("String3")
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12 col-md-7">
+                @language.Getkey("String4")
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12 col-md-7">
+                @language.Getkey("String5")
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12 col-md-7">
+                @language.Getkey("String6")
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12 col-md-7">
+                @language.Getkey("String7")
+            </div>
+        </div>
+    </div>
+</section>

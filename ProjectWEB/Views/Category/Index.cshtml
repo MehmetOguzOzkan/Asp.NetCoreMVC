@@ -1,0 +1,29 @@
+﻿@model List<ProjectWEB.Models.Category>
+
+@inject LanguageService language
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>@language.Getkey("Kategori")</th>
+                <th>@language.Getkey("Açıklama")</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="table-dark">
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@x.CategoryName</td>
+                    <td>@x.CategoryDescription</td>
+                    <td><a asp-action="CategoryDelete" asp-route-id="@x.CategoryID" class="btn btn-danger">@language.Getkey("Sil")</a></td>
+                    <td><a asp-action="CategoryGet" asp-route-id="@x.CategoryID" class="btn btn-success">@language.Getkey("Güncelle")</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<br />
+<a asp-action="CategoryAdd" class="btn btn-primary">@language.Getkey("Yeni Kategori")</a>

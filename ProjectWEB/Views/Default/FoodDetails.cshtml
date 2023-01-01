@@ -1,0 +1,7 @@
+﻿@{
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+@inject LanguageService language
+
+@await Component.InvokeAsync("FoodListById",new{id=ViewBag.id})
