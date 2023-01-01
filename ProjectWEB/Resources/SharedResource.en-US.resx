@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="100₺ ve üzeri alışverişlerde kargo ücretsiz" xml:space="preserve">
+    <value>Free shipping for all order of $99</value>
+  </data>
+  <data name="7/24 hizmetinizde" xml:space="preserve">
+    <value>support 24/7 time</value>
+  </data>
+  <data name="Adet" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Adres" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Alışverişe Devam Et" xml:space="preserve">
+    <value>Continue Shopping</value>
+  </data>
+  <data name="Anasayfa" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="ARA" xml:space="preserve">
+    <value>SEARCH</value>
+  </data>
+  <data name="Ara Toplam" xml:space="preserve">
+    <value>Sub Total</value>
+  </data>
+  <data name="Arama Sonucu" xml:space="preserve">
+    <value>Search Result</value>
+  </data>
+  <data name="Açık Olduğumuz Zamanlar" xml:space="preserve">
+    <value>Open Time</value>
+  </data>
+  <data name="Açıklama" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Deniz Ürünü Stoğu" xml:space="preserve">
+    <value>Stock of Seafoods</value>
+  </data>
+  <data name="Deniz Ürünü Çeşidi" xml:space="preserve">
+    <value>Types of Seafoods</value>
+  </data>
+  <data name="Dil" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Doğal" xml:space="preserve">
+    <value>Natural</value>
+  </data>
+  <data name="Ekle" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Et Ürünü Stoğu" xml:space="preserve">
+    <value>Stock of Meat Products</value>
+  </data>
+  <data name="Et Ürünü Çeşidi" xml:space="preserve">
+    <value>Types of Meat Products</value>
+  </data>
+  <data name="Fiyat" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Giriş" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Gün içinde kapınızda." xml:space="preserve">
+    <value>Fast Delivery.</value>
+  </data>
+  <data name="Güncelle" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="GİRİŞ" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="Hakkımızda" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="HOŞGELDİNİZ" xml:space="preserve">
+    <value>WELCOME</value>
+  </data>
+  <data name="Kaliteli" xml:space="preserve">
+    <value>Qualified</value>
+  </data>
+  <data name="Kategori" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Kategoriler" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Kaydet" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Kullanıcı Adınız" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Neye ihtiyacın var?" xml:space="preserve">
+    <value>What do you need?</value>
+  </data>
+  <data name="Ortalama Fiyat" xml:space="preserve">
+    <value>Average Price</value>
+  </data>
+  <data name="Sepet Toplamı" xml:space="preserve">
+    <value>Cart Total</value>
+  </data>
+  <data name="SEPETE EKLE" xml:space="preserve">
+    <value>ADD TO CART</value>
+  </data>
+  <data name="Sepetiniz" xml:space="preserve">
+    <value>Your Cart</value>
+  </data>
+  <data name="Sil" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Siparişi Onayla" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Stok Miktarı" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="Stokta En Az Bulunan" xml:space="preserve">
+    <value>Least in Stock</value>
+  </data>
+  <data name="Stokta En Fazla Bulunan" xml:space="preserve">
+    <value>Most in Stock</value>
+  </data>
+  <data name="Stokta var." xml:space="preserve">
+    <value>In Stock.</value>
+  </data>
+  <data name="Stokta yok." xml:space="preserve">
+    <value>Out of Stock.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>The brand company that we established in 2001 has succeeded in strengthening its entrepreneurial adventure, which it started with wholesale production, with retailing and e-commerce, and has carried this adventure to the most advanced level with its branches. Doubling its value invaluable with our user-first strategies and privileged customer portfolio,
+We succeeded in carrying our brand value to the top with precision. In this adventure, which we set out with our principle of solution and trust, taking into account the world standards; We have consistently provided the best brand ownership to countless customers by staying on the authority track.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>We have earned the right to rise to a respectable position in the e-commerce world by exhibiting steady growth with our professionalism, empathy-oriented, honesty and open perspective since its establishment.</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Our brand; was established with the aim of offering the best quality products in its field to the consumer at the most affordable price, and we continue to maintain our approach in the sector with the same meticulousness throughout the years we have left behind.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>In all your purchases made through our brand; We make it possible to have the most enjoyable shopping experience with our customer representatives, who provide an approach that does not involve victimization, fast delivery, cancellation/return/change awareness.</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>By following the latest developments in the sector and current demands in the user area, we offer you our web address, which we bring together with modern technology, and follow up with our best teammates, strong and professional administrative management, and enable you to experience consumer rights in the best way possible.</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Our goal is; To gain the appreciation of the public by reaching the "highest visitor satisfaction" position in the e-commerce community with its user experience and to ensure that you leave our site as a problem-free and happy consumer.</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Our brand, which continues to implement its projects by expanding its mission with exemplary quality, will add success to its success by leading with quality above the standards, by signing successful works with many satisfactions,
+It will continue to provide your satisfaction in an organizational way with its problem-oriented working principle within its strong staff.</value>
+  </data>
+  <data name="Süt Ürünü Stoğu" xml:space="preserve">
+    <value>Stock of Milk Products</value>
+  </data>
+  <data name="Süt Ürünü Çeşidi" xml:space="preserve">
+    <value>Types of Milk Products</value>
+  </data>
+  <data name="Tavuk Ürünü Stoğu" xml:space="preserve">
+    <value>Stock of Chicken Products</value>
+  </data>
+  <data name="Tavuk Ürünü Çeşidi" xml:space="preserve">
+    <value>Types of Chicken Products</value>
+  </data>
+  <data name="Taze" xml:space="preserve">
+    <value>Fresh</value>
+  </data>
+  <data name="Telefon" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Toplam" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Toplam Stok" xml:space="preserve">
+    <value>Total Stock</value>
+  </data>
+  <data name="Yeni Kategori" xml:space="preserve">
+    <value>New Category</value>
+  </data>
+  <data name="Yeni Kategori Ekle" xml:space="preserve">
+    <value>Add Category</value>
+  </data>
+  <data name="Yeni Yiyecek" xml:space="preserve">
+    <value>New Food</value>
+  </data>
+  <data name="Yeni Yiyecek Ekle" xml:space="preserve">
+    <value>Add Food</value>
+  </data>
+  <data name="Yiyecek" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="Yiyecekler" xml:space="preserve">
+    <value>Foods</value>
+  </data>
+  <data name="Yiyeceğin Türü" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Yönetici" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="Çok Satanlar" xml:space="preserve">
+    <value>Featured Product</value>
+  </data>
+  <data name="Çıkış" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Ücretsiz Anında Kapınızda" xml:space="preserve">
+    <value>Free Pickup and Delivery Available</value>
+  </data>
+  <data name="ÜRETİCİDEN EVİNİZE" xml:space="preserve">
+    <value>BREEDER TO HOME</value>
+  </data>
+  <data name="Ürün" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Ürün Bilgileri" xml:space="preserve">
+    <value>Product Information</value>
+  </data>
+  <data name="Üye değil misin?" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ÜYE OL" xml:space="preserve">
+    <value>SIGN UP</value>
+  </data>
+  <data name="İletişim" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="İrtibat Adresleri" xml:space="preserve">
+    <value>Contact Addresses</value>
+  </data>
+  <data name="İstatistikler" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="Şifreniz" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Şifreniz (Tekrar)" xml:space="preserve">
+    <value>Password (Again)</value>
+  </data>
+</root>
